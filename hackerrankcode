@@ -1,0 +1,14 @@
+import math
+n = int(raw_input().strip())
+assert 1<= n <= 200
+
+for i in range(n):
+    line = map(int,raw_input().strip().split(' '))
+    assert 0<= line[0] <= line[1] <= 2**32
+    a = line[0]
+    b = line[1]
+    if a == 0 or int(math.log(a,2))!= int(math.log(b,2)): print '0'
+    else:
+        pos = int(math.log(a^b,2))+1
+        mask = ~int(''.join(map(str,['1']*pos)),2)
+        print str(mask&b) 
