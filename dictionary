@@ -1,0 +1,10 @@
+n = int(raw_input())
+d = dict(raw_input().split() for _ in range(n))
+#print d
+t = 'track'
+while(t != ""):
+    k = raw_input()
+    t = k
+    if k in d:
+        print "%s=%s" % (k, d[k])
+    else: print 'Not found' 
