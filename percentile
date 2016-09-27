@@ -1,0 +1,7 @@
+X = sorted(map(int,raw_input().split())) 
+L,U = X[:len(X)/2],X[int(round(len(X)/2.0)):] 
+
+med = lambda a: (a[(len(a)-1)/2]+a[int(round((len(a)-1)/2.0))])/2 
+
+for i in [L,X,U]:
+    print med(i)
