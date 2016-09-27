@@ -1,0 +1,14 @@
+    var i=0,j=1,count=0;
+    
+    while(j < n) {
+        var diff = nums[j] - nums[i];
+        
+        if (diff == k) {
+            count++;
+            j++;
+        } else if (diff > k) {
+            i++;
+        } else if (diff < k) {
+            j++;
+        }
+    }
