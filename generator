@@ -39,3 +39,6 @@ while candidates:
 
 return result
 
+Iteration is a process implying iterables (implementing the __iter__() method) and iterators
+(implementing the __next__() method). Iterables are any objects you can get an iterator from. 
+Iterators are objects that let you iterate on iterables.
